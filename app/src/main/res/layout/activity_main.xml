@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="0dp"
+    android:addStatesFromChildren="true"
+    tools:actionBarNavMode="standard"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#EEECEC"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <EditText
+            android:id="@+id/searchInput"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:background="#ffffff"
+            android:drawableLeft="@drawable/baseline_search_black_18dp"
+            android:hint=" Searchs..."
+            android:textSize="15sp"></EditText>
+
+        <ImageButton
+            android:id="@+id/tabContent"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/baseline_tab_black_18dp"
+            android:tooltipText="Show/Hide Tiltles"></ImageButton>
+
+        <ImageButton
+            android:id="@+id/newnoteButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/baseline_note_add_black_18dp"
+            android:tooltipText="Add new note"></ImageButton>
+
+
+        <ImageButton
+            android:id="@+id/deleteButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/baseline_delete_black_18dp"
+            android:tooltipText="Delete note"></ImageButton>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="660dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <ListView
+            android:id="@+id/listNote"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:background="#03BEB4B4"
+            android:divider="#111"
+            android:dividerHeight="1dp"/>
+
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#A29B9B"></View>
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Type here" />
+
+    </LinearLayout><![CDATA[
+
+
+    >
+
+
+]]>
+</androidx.constraintlayout.widget.ConstraintLayout>
